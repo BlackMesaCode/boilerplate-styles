@@ -1,4 +1,5 @@
 bower register <my-package-name> <git-endpoint>
 bower register boilerplate-styles git://BlackMesa@bitbucket.org/BlackMesa/boilerplatestyles.git
+bower version <version>
 
 see also: https://bower.io/docs/creating-packages/
