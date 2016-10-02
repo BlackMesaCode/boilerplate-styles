@@ -1,0 +1,24 @@
+{
+  "name": "boilerplate-styles",
+  "description": "Lightweight boilerplate styles for your project",
+  "main": "",
+  "authors": [
+    "BlackMesa"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "boilerplate",
+    "sass",
+    "css",
+    "styles",
+    "base"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "boilerplate-styles",
+  "version": "1.0.7",
+  "description": "Lightweight boilerplate styles for your project",
+  "repository": {
+    "type": "git",
+    "url": "git+https://BlackMesa@bitbucket.org/BlackMesa/boilerplatestyles.git"
+  },
+  "author": "BlackMesa",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/BlackMesa/boilerplatestyles#readme",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "del": "^2.2.2",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2"
+  }
+}

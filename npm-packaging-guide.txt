@@ -1,0 +1,18 @@
+npm adduser
+    create user on the npm registry
+npm login
+    store credentials on the client
+npm config ls
+    make sure credentials are stored on the client
+gulp prepublish
+    run gulp task
+npm version [<newversion> | major | minor | patch | from-git ...]
+    changes version in package.json
+    creates a seperate git commit and a version tag
+npm publish 
+    publish the package to the registry
+
+
+
+
+see also: https://docs.npmjs.com/getting-started/publishing-npm-packages
