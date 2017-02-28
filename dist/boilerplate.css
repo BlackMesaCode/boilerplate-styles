@@ -126,13 +126,6 @@ html, body {
   height: 100%;
   width: 100%; }
 
-/* ------------------- Browser Upgrade Prompt ------------------- */
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #222;
-  padding: 0.2em 0; }
-
 /* ------------------- Opinionated Base Styles ------------------- */
 body, input, select, button, textarea {
   line-height: 1.5;

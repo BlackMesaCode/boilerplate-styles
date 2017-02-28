@@ -4,11 +4,11 @@
   "description": "Lightweight boilerplate styles for your project",
   "repository": {
     "type": "git",
-    "url": "git+https://BlackMesa@bitbucket.org/BlackMesa/boilerplatestyles.git"
+    "url": "git+https://github.com/BlackMesaCode/boilerplate-styles.git"
   },
   "author": "BlackMesa",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/BlackMesa/boilerplatestyles#readme",
+  "homepage": "https://github.com/BlackMesaCode/boilerplate-styles",
   "devDependencies": {
     "bower": "^1.7.9",
     "del": "^2.2.2",
