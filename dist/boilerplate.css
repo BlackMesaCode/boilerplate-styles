@@ -144,9 +144,9 @@ img, video, svg {
   width: auto; }
 
 input, textarea {
-  border: 1px solid #ccc;
+  border: 1px solid #222;
   padding: 0.2em 0.4em;
-  background-color: white; }
+  background-color: #fafafa; }
 
 input[type="submit"], input[type="reset"], input[type="button"], button {
   cursor: pointer; }
@@ -176,7 +176,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #222;
   margin: 1em 0;
   padding: 0; }
 
