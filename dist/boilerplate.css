@@ -14,29 +14,6 @@
 .float-right {
   float: right; }
 
-/* ------------------- Typography ------------------- */
-.ul-base {
-  padding: 0;
-  list-style-type: none; }
-
-.font-small {
-  font-size: 90%; }
-
-.font-smaller {
-  font-size: 80%; }
-
-.font-smallest {
-  font-size: 70%; }
-
-.font-large {
-  font-size: 110%; }
-
-.font-larger {
-  font-size: 120%; }
-
-.font-largest {
-  font-size: 130%; }
-
 /* ------------------- Centering ------------------- */
 .center {
   text-align: center; }
@@ -58,15 +35,6 @@
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%); }
-
-/* ------------------- Full-width ------------------- */
-.full-width {
-  display: block;
-  width: 100%; }
-
-.full-max-width {
-  display: block;
-  max-width: 100%; }
 
 /* ------------------- Visibility ------------------- */
 .hidden {
@@ -94,21 +62,6 @@
 .invisible {
   visibility: hidden; }
 
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap; }
-
-.col {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  max-width: 100%; }
-
 /* ------------------- Compatibility & Convinience & Best Practices ------------------- */
 html {
   box-sizing: border-box; }
@@ -120,7 +73,7 @@ html {
   font-size: 100.01%; }
 
 body {
-  font-size: 1em; }
+  font-size: 1rem; }
 
 html, body {
   height: 100%;
@@ -132,10 +85,15 @@ body, input, select, button, textarea {
   background-color: #fafafa;
   color: #222;
   font-family: sans-serif;
-  font-size: 1em; }
+  font-size: 1rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
 
 p {
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 1rem; }
 
 img, video, svg {
   max-width: 100%;
@@ -145,11 +103,12 @@ img, video, svg {
 
 input, textarea {
   border: 1px solid #222;
-  padding: 0.2em 0.4em;
+  padding: 0.2rem 0.4rem;
   background-color: #fafafa; }
 
 input[type="submit"], input[type="reset"], input[type="button"], button {
-  cursor: pointer; }
+  cursor: pointer;
+  border: 1px solid #222; }
 
 input[disabled] {
   cursor: not-allowed; }
@@ -162,7 +121,7 @@ table {
 
 th, td {
   border: 1px solid;
-  padding: 1.2em; }
+  padding: 1rem; }
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -177,7 +136,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #222;
-  margin: 1em 0;
+  margin: 1rem 0;
   padding: 0; }
 
 audio,
@@ -195,6 +154,10 @@ fieldset {
 
 textarea {
   resize: vertical; }
+
+ul, ol, dl, pre {
+  margin-top: 0;
+  margin-bottom: 1rem; }
 
 /* ------------------- Print Styles ------------------- */
 @media print {
