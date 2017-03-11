@@ -4,6 +4,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var minifyCss = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var del = require('del');
+var exec = require('child_process').exec; // part of nodejs - no npm package needed
 
 gulp.task("sass", function() {
     return gulp
@@ -12,6 +13,12 @@ gulp.task("sass", function() {
         .pipe(autoprefixer())
         .pipe(gulp.dest("./dist"))
 });
+
+
+gulp.task("watch", function() {
+    return gulp.watch("./styles/*.scss", gulp.series("sass"));  // in gulp 4.x we have to pass a function like gulp.series or gulp.parallel
+});
+
 
 gulp.task("minify", function() {
     return gulp
@@ -24,12 +31,22 @@ gulp.task("minify", function() {
 });
 
 gulp.task("clean", function () {
-    var filesToDelete = "dist/*";  // use * instead of *.*
+    var filesToDelete = "dist/*.css";  // use * instead of *.*
     return del(filesToDelete).then(paths => {
         console.log('Deleted files and folders:\n', paths.join('\n'))});
 });
 
 
-gulp.task("prepublish", gulp.series("clean", "sass", "minify"))
+gulp.task('liveserver', function (cb) {
+    exec('live-server dist', function (err, stdout, stderr) {
+        console.log(stdout);
+        console.log(stderr);
+        cb(err);
+    });
+});
 
+
+gulp.task("prepublish", gulp.series("clean", "sass", "minify"));
+
+gulp.task("default", gulp.series("clean", "sass", "minify", gulp.parallel("watch", "liveserver")), function() {});
         
