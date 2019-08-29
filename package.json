@@ -9,14 +9,14 @@
   "author": "BlackMesa",
   "license": "ISC",
   "homepage": "https://github.com/BlackMesaCode/boilerplate-styles",
+  "dependencies": {},
   "devDependencies": {
-    "bower": "^1.7.9",
-    "del": "^2.2.2",
-    "gulp": "gulpjs/gulp#4.0",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-clean-css": "^2.0.13",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "live-server": "^1.2.0"
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "live-server": "^1.2.1"
   }
 }
